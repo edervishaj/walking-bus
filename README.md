@@ -25,7 +25,7 @@ From a more abstract point of view: consider a complete graph G = (N, A). Set N 
 is the set of nodes, node 0 is the school and all other nodes represent bus stops. Set A =
 (i, j) : i ∈ N, j ∈ N is the set of arcs representing connections among nodes. For each pair of
 nodes i ∈ N, j ∈ N : (i, j) ∈ A the length and the dangerousness of the shortest path, c<sub>i,j</sub>, d<sub>i,j</sub>,
-from node i to node j is known; c<sub>0,j</sub> = \infty ∀j ∈ N \ {0}.
+from node i to node j is known; c<sub>0,j</sub> = ∞ ∀j ∈ N \ {0}.
 
 For the purpose of this challenge we only take into account graphs in which the length of
 the shortest path c ij is equal to the euclidean distance from node i to node j (the triangular
@@ -35,10 +35,10 @@ The walking bus problem can be seen as a special case of spanning tree problem. 
 problem we want to find the feasible spanning tree, rooted in 0, for graph G with the minimum
 number of leaves (primary objective function). A spanning tree is consider as feasible in the
 walking bus problem if no node is distant from 0 more than alpha times the shortest path from
-the node to 0 (that is c i,0 ). The walking bus problem takes also into account an additional
+the node to 0 (that is c<sub>0,j</sub>). The walking bus problem takes also into account an additional
 objective function that is the minimization of the total dangerousness of the paths selected as
 routes for the walking bus (secondary objective function). The total dangerousness is computed
-as the sum of the risk (d ij ) associated with all the arcs composing the walking bus network.
+as the sum of the risk (d<sub>i,j</sub>) associated with all the arcs composing the walking bus network.
 This objective function is less important than the minimization of the number of leaves and it
 is only used in order to differentiate among solutions with the same number of leaves.
 
