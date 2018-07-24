@@ -1,6 +1,6 @@
-### Walking Bus Challenge
+## Walking Bus Challenge<sup>[1](#footnotes1)</sup>
 
-#### Problem Description
+### Problem Description
 
 An elementary school want to setup a walking bus system for its students.
 A walking bus (pedibus in Italian) is a form of student transport for schoolchildren who,
@@ -36,7 +36,7 @@ as the sum of the risk (d ij ) associated with all the arcs composing the walkin
 This objective function is less important than the minimization of the number of leaves and it
 is only used in order to differentiate among solutions with the same number of leaves.
 
-#### Results evaluation criteria
+### Results evaluation criteria
 
 Solvers will be evaluated and ranked using a set of 10 instances. This evaluation set is not the
 same as the test set provided to the participants. However instances in the evaluation set have
@@ -54,3 +54,6 @@ and D<sub>1</sub> < D<sub>2</sub> then S<sub>1</sub> is better than S<sub>2</sub
 3. **Computational time**. The faster the better. If L<sub>1</sub> = L<sub>2</sub> and D<sub>1</sub> = D<sub>2</sub> then the solving time is considered. Lets
 call T<sub>1</sub> and T<sub>2</sub> the time required in order to obtain S<sub>1</sub> and S<sub>2</sub> respectively. If L<sub>1</sub> = L<sub>2</sub> and
 D<sub>1</sub> = D<sub>2</sub> and T<sub>1</sub> < T<sub>2</sub> then S<sub>1</sub> is better than S<sub>2</sub>.
+
+
+<a id="footnotes1">1</a>: project for Foundations of Operations Research course at Politecnico di Milano
