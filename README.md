@@ -3,28 +3,34 @@
 ### Problem Description
 
 An elementary school want to setup a walking bus system for its students.
+
 A walking bus (pedibus in Italian) is a form of student transport for schoolchildren who,
 chaperoned by two adults (usually a driver leads and a conductor follows), walk to school, in
 much the same way a school bus would drive them to school. Like a traditional bus, walking
 buses have a fixed route with designated bus stops in which they pick up children (The walking
 bus definition is courtesy of Wikipedia).
+
 The routes of the walking bus system must serve all students joining the initiative. A route
 starts form a bus stop, goes through other bus stops and ends at the school. All students on the
 route must be picked-up. Routes can merge but cannot split after merging. No student must
 travel more than alpha times the shortest path from his bus stop to the school. The design of
 the routes should ensure students’ safety minimizing the risk involved in the path from home to
 school.
+
 It is your duty as manager of the school to define all the routes for the walking bus system
 taking into account all requirements and minimizing the number of chaperons involved. In other
 words, the number of routes composing the walking bus system must be minimized.
+
 From a more abstract point of view: consider a complete graph G = (N, A). Set N = {0..n}
 is the set of nodes, node 0 is the school and all other nodes represent bus stops. Set A =
 (i, j) : i ∈ N, j ∈ N is the set of arcs representing connections among nodes. For each pair of
-nodes i ∈ N, j ∈ N : (i, j) ∈ A the length and the dangerousness of the shortest path, c i,j , d i,j ,
-from node i to node j is known; c 0,j = ∞ ∀j ∈ N \ {0}.
+nodes i ∈ N, j ∈ N : (i, j) ∈ A the length and the dangerousness of the shortest path, c<sub>i,j</sub>, d<sub>i,j</sub>,
+from node i to node j is known; c<sub>0,j</sub> = \infty ∀j ∈ N \ {0}.
+
 For the purpose of this challenge we only take into account graphs in which the length of
 the shortest path c ij is equal to the euclidean distance from node i to node j (the triangular
 inequality holds).
+
 The walking bus problem can be seen as a special case of spanning tree problem. In this
 problem we want to find the feasible spanning tree, rooted in 0, for graph G with the minimum
 number of leaves (primary objective function). A spanning tree is consider as feasible in the

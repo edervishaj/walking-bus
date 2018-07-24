@@ -21,6 +21,7 @@ bringing down the number of leaves of the whole spanning tree.
 The solve is programmed in Java. Running the solver requires Java SE 8 Update
 121. Also for reconstructing the graph in the source code, we have used the Google <a href="https://github.com/google/guava/wiki">Guava library</a>
 which has a fast implementation of a graph, so we could make the program run a bit faster and also helped me write less code.
+
 The solver can be run by the executable .jar file (which includes the Guava jar file)
 from the terminal (command prompt in MS Windows):
 _java –jar solvername.jar pedibus_300.sol_
